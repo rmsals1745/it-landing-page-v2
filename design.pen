@@ -1,0 +1,1849 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "yIZwU",
+      "x": 0,
+      "y": 0,
+      "name": "IT국비지원 랜딩페이지",
+      "clip": true,
+      "width": 390,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "KYSBj",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1A1A2E",
+                "position": 0
+              },
+              {
+                "color": "#16213E",
+                "position": 0.5
+              },
+              {
+                "color": "#0F3460",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            60,
+            24,
+            40,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "RUBOo",
+              "name": "badge",
+              "fill": "#FF6B6B22",
+              "cornerRadius": 20,
+              "gap": 6,
+              "padding": [
+                6,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "rJF1s",
+                  "name": "badgeIcon",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "sparkles",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FF6B6B"
+                },
+                {
+                  "type": "text",
+                  "id": "swtW8",
+                  "name": "badgeText",
+                  "fill": "#FF6B6B",
+                  "content": "2026 국비지원 교육생 모집중",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "8HSdp",
+              "name": "headline1",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "IT 분야 취업,",
+              "fontFamily": "Bricolage Grotesque",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "tMqyN",
+              "name": "headline2",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "국비지원으로\n무료로 시작하세요",
+              "lineHeight": 1.3,
+              "fontFamily": "Bricolage Grotesque",
+              "fontSize": 28,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "jkL8t",
+              "name": "subline",
+              "fill": "#9CA3AF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "100% 비대면 온라인 강의 · 6개월 과정\n자부담금 60만원 | 취업까지 연계",
+              "lineHeight": 1.6,
+              "fontFamily": "DM Sans",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "N2PVO",
+              "name": "trustRow",
+              "width": "fill_container",
+              "gap": 16,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iAaWv",
+                  "name": "trust1",
+                  "fill": "#6B7280",
+                  "content": "✓ 비대면 수업",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "G9mQF",
+                  "name": "trust2",
+                  "fill": "#6B7280",
+                  "content": "✓ 6개월 과정",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "zXIbc",
+                  "name": "trust3",
+                  "fill": "#6B7280",
+                  "content": "✓ 취업 연계",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7gAAL",
+              "name": "Hero Form",
+              "width": "fill_container",
+              "fill": "#FFFFFF12",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#FFFFFF22"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "1oKzs",
+                  "name": "nameRow",
+                  "width": "fill_container",
+                  "height": 46,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "T5LU5",
+                      "name": "nameIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "user",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Q8C8m",
+                      "name": "namePlace",
+                      "fill": "#D1D5DB",
+                      "content": "이름을 입력하세요",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "I0ItE",
+                  "name": "phoneRow",
+                  "width": "fill_container",
+                  "height": 46,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Dmsnr",
+                      "name": "phoneIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "phone",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Mzyrm",
+                      "name": "phonePlace",
+                      "fill": "#D1D5DB",
+                      "content": "전화번호를 입력하세요",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bQ7Kw",
+                  "name": "heroSubmit",
+                  "width": "fill_container",
+                  "height": 50,
+                  "fill": "#FF6B6B",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cempx",
+                      "name": "heroSubmitText",
+                      "fill": "#FFFFFF",
+                      "content": "무료 상담 신청하기",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "mwxKB",
+                  "name": "heroPrivacy",
+                  "fill": "#FFFFFF55",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "* 개인정보 수집 및 이용에 동의합니다",
+                  "textAlign": "center",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oxoDr",
+          "name": "MBC+ Section",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            40,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "3ba6E",
+              "name": "mbcHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SRB0n",
+                  "name": "mbcBadge",
+                  "fill": "#6366F122",
+                  "cornerRadius": 12,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jXfza",
+                      "name": "mbcBadgeText",
+                      "fill": "#6366F1",
+                      "content": "MBC플러스 KDT",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "XRoGm",
+                  "name": "mbcTitle",
+                  "fill": "#1A1A1A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "3D 콘텐츠 제작\n전문가 과정",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Bricolage Grotesque",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "yVlTB",
+                  "name": "mbcDesc",
+                  "fill": "#6B7280",
+                  "content": "MBC플러스의 미디어 노하우로 배우는 실무 교육",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xbs4k",
+              "name": "mbcCards",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uA370",
+                  "name": "card1",
+                  "width": "fill_container",
+                  "fill": "#F6F7F8",
+                  "cornerRadius": 16,
+                  "gap": 14,
+                  "padding": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MvZTy",
+                      "name": "card1Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#FF6B6B",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "TDsmi",
+                          "name": "card1IconImg",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "box",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1tF0C",
+                      "name": "card1Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "9LSvE",
+                          "name": "card1Title",
+                          "fill": "#1A1A1A",
+                          "content": "C4D · 블렌더 3D",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jPscS",
+                          "name": "card1Desc",
+                          "fill": "#6B7280",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "3D 모델링, 텍스처링, 애니메이션 기초부터 마스터",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9Zbe9",
+                  "name": "card2",
+                  "width": "fill_container",
+                  "fill": "#F6F7F8",
+                  "cornerRadius": 16,
+                  "gap": 14,
+                  "padding": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "42xM2",
+                      "name": "card2Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#6366F1",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "4Y13q",
+                          "name": "card2IconImg",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "monitor",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fsk7j",
+                      "name": "card2Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZhRg0",
+                          "name": "card2Title",
+                          "fill": "#1A1A1A",
+                          "content": "언리얼엔진",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "irnB1",
+                          "name": "card2Desc",
+                          "fill": "#6B7280",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "실시간 렌더링과 블루프린트 인터랙션 구현",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xxPKt",
+                  "name": "card3",
+                  "width": "fill_container",
+                  "fill": "#F6F7F8",
+                  "cornerRadius": 16,
+                  "gap": 14,
+                  "padding": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "O3iqV",
+                      "name": "card3Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#22C55E",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "NLrtQ",
+                          "name": "card3IconImg",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "sparkles",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "grHK5",
+                      "name": "card3Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jiDpW",
+                          "name": "card3Title",
+                          "fill": "#1A1A1A",
+                          "content": "생성형 AI 융합",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LHCvq",
+                          "name": "card3Desc",
+                          "fill": "#6B7280",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "AI 활용 에셋 제작 및 워크플로우 자동화",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aeXT2",
+                  "name": "card4",
+                  "width": "fill_container",
+                  "fill": "#F6F7F8",
+                  "cornerRadius": 16,
+                  "gap": 14,
+                  "padding": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Vxotp",
+                      "name": "card4Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#FCD34D",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "eaPv1",
+                          "name": "card4IconImg",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "briefcase",
+                          "iconFontFamily": "lucide",
+                          "fill": "#1A1A1A"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ApwAi",
+                      "name": "card4Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ogBzo",
+                          "name": "card4Title",
+                          "fill": "#1A1A1A",
+                          "content": "취업 · 인턴십 연계",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ibiUi",
+                          "name": "card4Desc",
+                          "fill": "#6B7280",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "170여 개 협력기업 채용 연계 및 일본 연수 기회",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ldWmB",
+          "name": "DongA AI Section",
+          "width": "fill_container",
+          "fill": "#F6F7F8",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            40,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "uT00j",
+              "name": "aiHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yqa2m",
+                  "name": "aiBadge",
+                  "fill": "#22C55E22",
+                  "cornerRadius": 12,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "B43cU",
+                      "name": "aiBadgeText",
+                      "fill": "#22C55E",
+                      "content": "동아AI랩",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Dl7Vx",
+                  "name": "aiTitle",
+                  "fill": "#1A1A1A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "AI 에이전트 개발\n전문가 과정",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Bricolage Grotesque",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "heYET",
+                  "name": "aiDesc",
+                  "fill": "#6B7280",
+                  "content": "비전공자도 OK! 기초부터 AI 서비스 개발까지",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SowY8",
+              "name": "aiCards",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "AQx73",
+                  "name": "aiCard1",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "gap": 14,
+                  "padding": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "82oje",
+                      "name": "aiCard1Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#0F3460",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Qp5Vb",
+                          "name": "aiCard1Icn",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "code",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "C6qTI",
+                      "name": "aiCard1Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CokfJ",
+                          "name": "aiCard1Title",
+                          "fill": "#1A1A1A",
+                          "content": "파이썬 · LLM 프로그래밍",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lPLrv",
+                          "name": "aiCard1Desc",
+                          "fill": "#6B7280",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "파이썬 기초부터 거대언어모델(LLM) 활용까지",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "54MMp",
+                  "name": "aiCard2",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "gap": 14,
+                  "padding": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hkMIA",
+                      "name": "aiCard2Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#6366F1",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "obk29",
+                          "name": "aiCard2Icn",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "bot",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "02b1Q",
+                      "name": "aiCard2Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hxYKH",
+                          "name": "aiCard2Title",
+                          "fill": "#1A1A1A",
+                          "content": "자율 AI 에이전트 개발",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "n5CEh",
+                          "name": "aiCard2Desc",
+                          "fill": "#6B7280",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "스스로 생각하고 업무를 처리하는 AI 시스템 구현",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zbri7",
+                  "name": "aiCard3",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "gap": 14,
+                  "padding": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "R9WOB",
+                      "name": "aiCard3Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#FF6B6B",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "8G8Sr",
+                          "name": "aiCard3Icn",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "chart-bar",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JAklN",
+                      "name": "aiCard3Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kZw1Y",
+                          "name": "aiCard3Title",
+                          "fill": "#1A1A1A",
+                          "content": "빅데이터 분석 · 서비스 기획",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TswhM",
+                          "name": "aiCard3Desc",
+                          "fill": "#6B7280",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "미디어 데이터 분석 및 AI 서비스 기획·배포",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "K9huA",
+              "name": "Roadmap",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "2g4vZ",
+                  "name": "step1",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "gap": 12,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "krpEG",
+                      "name": "step1Badge",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#22C55E",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "6MJTa",
+                          "name": "step1Num",
+                          "fill": "#FFFFFF",
+                          "content": "1",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Kr5jn",
+                      "name": "step1Info",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A41Gi",
+                          "name": "step1Title",
+                          "fill": "#1A1A1A",
+                          "content": "기초 다지기 · 1.5개월",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LogLA",
+                          "name": "step1Desc",
+                          "fill": "#6B7280",
+                          "content": "AI 기초 원리, 프롬프트 엔지니어링",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BzQWr",
+                  "name": "step2",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "gap": 12,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MTag0",
+                      "name": "step2Badge",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#6366F1",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wyfPq",
+                          "name": "step2Num",
+                          "fill": "#FFFFFF",
+                          "content": "2",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AGeCs",
+                      "name": "step2Info",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bb9UY",
+                          "name": "step2Title",
+                          "fill": "#1A1A1A",
+                          "content": "실력 키우기 · 3개월",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "3viYd",
+                          "name": "step2Desc",
+                          "fill": "#6B7280",
+                          "content": "LLM 다루기, 파인튜닝, 챗봇 개발",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8YqOe",
+                  "name": "step3",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "gap": 12,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SgRR0",
+                      "name": "step3Badge",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#FF6B6B",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "abqdu",
+                          "name": "step3Num",
+                          "fill": "#FFFFFF",
+                          "content": "3",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OEtRj",
+                      "name": "step3Info",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cwoDn",
+                          "name": "step3Title",
+                          "fill": "#1A1A1A",
+                          "content": "전문가 되기 · 1.5개월",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "A8KnC",
+                          "name": "step3Desc",
+                          "fill": "#6B7280",
+                          "content": "고급 AI 에이전트 개발, 배포 및 운영",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5l9UD",
+              "name": "Info Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kPfic",
+                  "name": "infoRow1",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YJt1P",
+                      "name": "infoRow1Label",
+                      "fill": "#6B7280",
+                      "content": "교육 기간",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kq0Gr",
+                      "name": "infoRow1Value",
+                      "fill": "#1A1A1A",
+                      "content": "약 6개월",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eQ3bA",
+                  "name": "infoDiv1",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#F3F4F6"
+                },
+                {
+                  "type": "frame",
+                  "id": "IYUWS",
+                  "name": "infoRow2",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fWUVy",
+                      "name": "infoRow2Label",
+                      "fill": "#6B7280",
+                      "content": "수업 시간",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "T7ZTb",
+                      "name": "infoRow2Value",
+                      "fill": "#1A1A1A",
+                      "content": "평일 09:30 ~ 18:20",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nXGt5",
+                  "name": "infoDiv2",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#F3F4F6"
+                },
+                {
+                  "type": "frame",
+                  "id": "on38L",
+                  "name": "infoRow3",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QOxKH",
+                      "name": "infoRow3Label",
+                      "fill": "#6B7280",
+                      "content": "수업 방식",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LoUSs",
+                      "name": "infoRow3Value",
+                      "fill": "#1A1A1A",
+                      "content": "100% 비대면 (ZOOM)",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9FGP0",
+                  "name": "infoDiv3",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#F3F4F6"
+                },
+                {
+                  "type": "frame",
+                  "id": "8tEE6",
+                  "name": "infoRow4",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Cjgut",
+                      "name": "infoRow4Label",
+                      "fill": "#6B7280",
+                      "content": "자부담금",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "65USE",
+                      "name": "infoRow4Value",
+                      "fill": "#FF6B6B",
+                      "content": "60만원",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZNmAc",
+          "name": "Benefits Section",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            40,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "aXQkg",
+              "name": "benefitTitle",
+              "fill": "#1A1A1A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "파격적인 교육 혜택",
+              "textAlign": "center",
+              "fontFamily": "Bricolage Grotesque",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "DmhB6",
+              "name": "benefitGrid",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3teRN",
+                  "name": "bg1",
+                  "width": "fill_container",
+                  "fill": "#FF6B6B11",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "UJIxf",
+                      "name": "bg1Ic",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "#FF6B6B22",
+                      "cornerRadius": 20,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "8y36m",
+                          "name": "bg1Icn",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "wallet",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FF6B6B"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "1vIvd",
+                      "name": "bg1T",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "자부담금\n60만원",
+                      "lineHeight": 1.3,
+                      "textAlign": "center",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OY6SX",
+                      "name": "bg1D",
+                      "fill": "#6B7280",
+                      "content": "국비지원",
+                      "textAlign": "center",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "u5oLS",
+                  "name": "bg2",
+                  "width": "fill_container",
+                  "fill": "#6366F111",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "baS0v",
+                      "name": "bg2Ic",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "#6366F122",
+                      "cornerRadius": 20,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "LLK06",
+                          "name": "bg2Icn",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "banknote",
+                          "iconFontFamily": "lucide",
+                          "fill": "#6366F1"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "JOdxw",
+                      "name": "bg2T",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "월 최대\n81.6만원",
+                      "lineHeight": 1.3,
+                      "textAlign": "center",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sM76Y",
+                      "name": "bg2D",
+                      "fill": "#6B7280",
+                      "content": "훈련장려금",
+                      "textAlign": "center",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mPcef",
+              "name": "benefitRow2",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "q6FWS",
+                  "name": "bg3",
+                  "width": "fill_container",
+                  "fill": "#22C55E11",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xMW3I",
+                      "name": "bg3Ic",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "#22C55E22",
+                      "cornerRadius": 20,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "ix87x",
+                          "name": "bg3Icn",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "laptop",
+                          "iconFontFamily": "lucide",
+                          "fill": "#22C55E"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "JUrE4",
+                      "name": "bg3T",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "노트북\n무료 대여",
+                      "lineHeight": 1.3,
+                      "textAlign": "center",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pOyGz",
+                      "name": "bg3D",
+                      "fill": "#6B7280",
+                      "content": "고사양 장비",
+                      "textAlign": "center",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vrooo",
+                  "name": "bg4",
+                  "width": "fill_container",
+                  "fill": "#FCD34D11",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "9Aupj",
+                      "name": "bg4Ic",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "#FCD34D44",
+                      "cornerRadius": 20,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "mAhu5",
+                          "name": "bg4Icn",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "monitor",
+                          "iconFontFamily": "lucide",
+                          "fill": "#D97706"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "KvVAC",
+                      "name": "bg4T",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "100%\n비대면",
+                      "lineHeight": 1.3,
+                      "textAlign": "center",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uWFq2",
+                      "name": "bg4D",
+                      "fill": "#6B7280",
+                      "content": "ZOOM 실시간",
+                      "textAlign": "center",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Q3Jpl",
+          "name": "Contact Form Section",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1A1A2E",
+                "position": 0
+              },
+              {
+                "color": "#0F3460",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            48,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "vFXG5",
+              "name": "formTitle",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "무료 상담 신청",
+              "textAlign": "center",
+              "fontFamily": "Bricolage Grotesque",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "WfFfj",
+              "name": "formSubtitle",
+              "fill": "#9CA3AF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "상담만 받아도\nAI 뉴스 전자책 무료 제공!",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "iGdJ3",
+              "name": "formCard",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "7XKgK",
+                  "name": "nameLabel",
+                  "fill": "#1A1A1A",
+                  "content": "이름",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "j5EFa",
+                  "name": "nameInput",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#F6F7F8",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IICZn",
+                      "name": "namePlaceholder",
+                      "fill": "#D1D5DB",
+                      "content": "홍길동",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "SkVAx",
+                  "name": "phoneLabel",
+                  "fill": "#1A1A1A",
+                  "content": "전화번호",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "9XSO8",
+                  "name": "phoneInput",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#F6F7F8",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  },
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JvS52",
+                      "name": "phonePlaceholder",
+                      "fill": "#D1D5DB",
+                      "content": "010-0000-0000",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YYnpu",
+                  "name": "privacyRow",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jKbsW",
+                      "name": "privacyCheck",
+                      "width": 20,
+                      "height": 20,
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "thickness": 1.5,
+                        "fill": "#D1D5DB"
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bEREn",
+                      "name": "privacyText",
+                      "fill": "#6B7280",
+                      "content": "개인정보 수집 및 이용에 동의합니다",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nxKFC",
+                  "name": "submitBtn",
+                  "width": "fill_container",
+                  "height": 52,
+                  "fill": "#FF6B6B",
+                  "cornerRadius": 14,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IvXAo",
+                      "name": "submitText",
+                      "fill": "#FFFFFF",
+                      "content": "상담 신청하기",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YWmhN",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#111111",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            32,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "SCNsQ",
+              "name": "footerLogo",
+              "fill": "#FFFFFF",
+              "content": "IT국비지원 교육센터",
+              "fontFamily": "DM Sans",
+              "fontSize": 14,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "8KHqs",
+              "name": "footerInfo",
+              "fill": "#6B7280",
+              "content": "MBC아카데미+ · 동아AI 공식 파트너",
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 12
+            },
+            {
+              "type": "frame",
+              "id": "xy1i3",
+              "name": "footerDivider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#333333"
+            },
+            {
+              "type": "text",
+              "id": "Qsyjb",
+              "name": "footerCopy",
+              "fill": "#6B7280",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "© 2026 MBC플러스 · 동아AI랩 KDT 국비지원 과정\n비대면 온라인 교육 | 6개월 과정",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
