@@ -3,7 +3,7 @@
 // ============================================
 const CONFIG = {
   // Google Apps Script 배포 URL (Step 2에서 생성)
-  GOOGLE_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbzOsYiPIIo0-Kda9KgsqjQOIqae0Y60pXgKPSfjTkstinYk00EkRD0cqdyH2AyF7t11gg/exec',
+  GOOGLE_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbxPz4z9CLaMI99OzXTAqH-x6k-u4Piz6G0JhnSofy1OOEAQzkd6VXD1Mf8AIepSZJPC2g/exec',
 
   // 관리자 알림 받을 이메일 (Google Sheets에서 처리)
   ADMIN_EMAIL: 'YOUR_EMAIL_HERE',
