@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Improvement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="user-profile card">
+                <img src="https://via.placeholder.com/150" alt="User Avatar" class="avatar">
+                <h2>Jay</h2>
+                <p>Senior Agent</p>
+                <p class="bio">Dedicated to continuous learning and improvement.</p>
+            </div>
+            <div class="key-stats card">
+                <h3>Key Stats</h3>
+                <div class="stat">
+                    <span>Level</span>
+                    <span class="value">12</span>
+                </div>
+                <div class="stat">
+                    <span>XP</span>
+                    <span class="value">8,500</span>
+                </div>
+                <div class="stat">
+                    <span>Tasks Completed</span>
+                    <span class="value">128</span>
+                </div>
+                <div class="stat">
+                    <span>Skills Acquired</span>
+                    <span class="value">24</span>
+                </div>
+            </div>
+        </aside>
+        <main class="main-content">
+            <section class="skills-chart card">
+                <h3>Skills</h3>
+                <canvas id="skillsRadarChart"></canvas>
+            </section>
+            <section class="recent-activities card">
+                <h3>Recent Activities</h3>
+                <ul>
+                    <li>Completed task: JUS-154 - Implement new login flow</li>
+                    <li>Acquired new skill: TypeScript</li>
+                    <li>Promoted to Senior Agent</li>
+                    <li>Completed course: Advanced CSS</li>
+                </ul>
+            </section>
+            <section class="badges card">
+                <h3>Badges</h3>
+                <div class="badge-list">
+                    <div class="badge">Fast Learner</div>
+                    <div class="badge">Team Player</div>
+                    <div class="badge">Code Master</div>
+                    <div class="badge">Bug Hunter</div>
+                </div>
+            </section>
+            <section class="goals card">
+                <h3>Goals</h3>
+                <div class="goal">
+                    <p>Master Go programming language</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="goal">
+                    <p>Contribute to an open-source project</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 20%;"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="card" id="hermes-stats-card">
+                <h3>Hermes Self-Improving Agent</h3>
+                <div id="hermes-stats-content">
+                    <p>Loading Hermes stats...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

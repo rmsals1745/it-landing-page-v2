@@ -1,100 +1,94 @@
-// ============================================
-// Configuration - 여기에 설정값을 입력하세요
-// ============================================
-const CONFIG = {
-  // Google Apps Script 배포 URL (Step 2에서 생성)
-  GOOGLE_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbxPz4z9CLaMI99OzXTAqH-x6k-u4Piz6G0JhnSofy1OOEAQzkd6VXD1Mf8AIepSZJPC2g/exec',
-
-  // 관리자 알림 받을 이메일 (Google Sheets에서 처리)
-  ADMIN_EMAIL: 'YOUR_EMAIL_HERE',
+const skillsData = {
+    labels: ['Frontend', 'Backend', 'Design', 'Communication', 'DevOps', 'Mobile'],
+    datasets: [{
+        label: 'My Skills',
+        data: [8, 9, 6, 7, 5, 7],
+        backgroundColor: 'rgba(76, 175, 80, 0.2)',
+        borderColor: 'rgba(76, 175, 80, 1)',
+        pointBackgroundColor: 'rgba(76, 175, 80, 1)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgba(77, 182, 172, 1)'
+    }]
 };
 
-// ============================================
-// Form Submission Handler
-// ============================================
-async function handleSubmit(event, formType) {
-  event.preventDefault();
+const chartOptions = {
+    scales: {
+        r: {
+            angleLines: {
+                display: true
+            },
+            suggestedMin: 0,
+            suggestedMax: 10
+        }
+    },
+    maintainAspectRatio: false
+};
 
-  const form = event.target;
-  const name = form.querySelector('input[name="name"]').value.trim();
-  const phone = form.querySelector('input[name="phone"]').value.trim();
-
-  // Validation
-  if (!name || !phone) {
-    alert('이름과 전화번호를 모두 입력해주세요.');
-    return false;
-  }
-
-  // Phone number format validation
-  const phoneRegex = /^01[0-9]-?[0-9]{3,4}-?[0-9]{4}$/;
-  if (!phoneRegex.test(phone.replace(/-/g, ''))) {
-    alert('올바른 전화번호를 입력해주세요.');
-    return false;
-  }
-
-  // Show loading state
-  const submitBtn = form.querySelector('button[type="submit"]');
-  const originalText = submitBtn.textContent;
-  submitBtn.textContent = '신청 중...';
-  submitBtn.classList.add('loading');
-
-  try {
-    const response = await fetch(CONFIG.GOOGLE_SCRIPT_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: name,
-        phone: phone,
-        formType: formType,
-        timestamp: new Date().toISOString(),
-        userAgent: navigator.userAgent,
-      }),
-    });
-
-    // Show success modal
-    document.getElementById('successModal').classList.add('active');
-
-    // Reset form
-    form.reset();
-
-  } catch (error) {
-    console.error('Submit error:', error);
-    alert('신청 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
-  } finally {
-    submitBtn.textContent = originalText;
-    submitBtn.classList.remove('loading');
-  }
-
-  return false;
-}
-
-// ============================================
-// Modal
-// ============================================
-function closeModal() {
-  document.getElementById('successModal').classList.remove('active');
-}
-
-// Close modal on overlay click
-document.getElementById('successModal').addEventListener('click', function(e) {
-  if (e.target === this) closeModal();
+const ctx = document.getElementById('skillsRadarChart').getContext('2d');
+new Chart(ctx, {
+    type: 'radar',
+    data: skillsData,
+    options: chartOptions
 });
 
-// ============================================
-// Phone number auto-format (010-1234-5678)
-// ============================================
-document.querySelectorAll('input[type="tel"]').forEach(input => {
-  input.addEventListener('input', function(e) {
-    let value = this.value.replace(/[^0-9]/g, '');
-    if (value.length > 11) value = value.slice(0, 11);
+document.addEventListener('DOMContentLoaded', () => {
+    const hermesStatsContainer = document.getElementById('hermes-stats-content');
 
-    if (value.length > 7) {
-      this.value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7);
-    } else if (value.length > 3) {
-      this.value = value.slice(0, 3) + '-' + value.slice(3);
-    } else {
-      this.value = value;
+    async function fetchHermesStats() {
+        try {
+            // Assuming the API is running on localhost:8000 as per agent-harness
+            const response = await fetch('http://localhost:8000/api/hermes/stats');
+            const stats = await response.json();
+
+            if (stats.error) {
+                throw new Error(stats.error);
+            }
+
+            if (!stats.installed) {
+                hermesStatsContainer.innerHTML = '<p>Hermes is not installed on this system.</p>';
+                return;
+            }
+
+            let recentMemoriesHtml = '<ul>';
+            if (stats.recentMemories) {
+                stats.recentMemories.forEach(mem => {
+                    recentMemoriesHtml += `<li>${mem.name} - <i>${new Date(mem.mtime).toLocaleString()}</i></li>`;
+                });
+            }
+            recentMemoriesHtml += '</ul>';
+
+            let recentSkillsHtml = '<ul>';
+            if (stats.recentSkillUsage) {
+                stats.recentSkillUsage.forEach(skill => {
+                    recentSkillsHtml += `<li>${skill.skill} - <i>${new Date(skill.calledAt).toLocaleString()}</i></li>`;
+                });
+            }
+            recentSkillsHtml += '</ul>';
+
+            hermesStatsContainer.innerHTML = `
+                <div class="stat"><span>Memories</span><span class="value">${stats.memoriesCount || 0}</span></div>
+                <p><b>Recent Memories:</b></p>
+                ${recentMemoriesHtml}
+                <div class="stat"><span>Skills</span><span class="value">${stats.skillsCount || 0}</span></div>
+                <p><b>Recent Skill Usage:</b></p>
+                ${recentSkillsHtml}
+                <div class="stat"><span>Active Sessions</span><span class="value">${stats.activeSessions || 0}</span></div>
+                <div class="stat"><span>Learning Events (7d)</span><span class="value">${stats.learningEvents7d || 0}</span></div>
+                <div class="stat"><span>Paperclip Tasks Done (30d)</span><span class="value">${stats.paperclipDone30d || 0}</span></div>
+            `;
+             if(stats.db_error) {
+                const errorEl = document.createElement('p');
+                errorEl.style.color = 'orange';
+                errorEl.textContent = `Warning: Could not read Hermes state DB. Some stats may be stale or missing. (${stats.db_error})`;
+                hermesStatsContainer.appendChild(errorEl);
+            }
+
+
+        } catch (error) {
+            hermesStatsContainer.innerHTML = `<p style="color: red;">Error loading Hermes stats: ${error.message}</p>`;
+        }
     }
-  });
+
+    fetchHermesStats();
 });
